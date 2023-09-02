@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        const bornDate = new Date("1993-09-07T09:00:00.000Z"); // Define a data de nascimento como 7 de setembro de 1993 às 09:00:00 UTC
+        const today = new Date(); // Obtém a data atual
+
+        console.log(bornDate); // Exibe a data de nascimento no console
+        console.log(bornDate.toISOString()); // Exibe a data de nascimento no formato ISO 8601
+        console.log("dia", bornDate.getDate()); // Exibe o dia do mês da data de nascimento
+        console.log("mês", bornDate.getMonth() + 1); // Exibe o mês da data de nascimento (adiciona 1 porque os meses são indexados em zero)
+        console.log("ano", bornDate.getFullYear()); // Exibe o ano da data de nascimento
+        console.log("idade", today.getDay() - bornDate.getFullYear()); // Calcula a idade através da subtração do ano de nascimento do ano atual
+
+        </script>
+</html>

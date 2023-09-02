@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Comentários</title>
+  </head>
+  <body>
+    <script>
+      // Iniciando a variável x com o valor 10
+      let x = 10;
+
+      // Imprimindo o valor atual de x no console
+      console.log("x", x);
+
+      {
+        // Imprimindo o valor atual de x no console dentro do bloco de código
+        console.log("x", x);
+
+        // Atribuindo o valor 20 à variável x
+        x = 20;
+
+        // Criando uma nova variável y e atribuindo o valor 30
+        let y = 30;
+      }
+
+      // Imprimindo o valor atual de x no console após o bloco de código
+      console.log("x", x);
+
+      // Tentando imprimir o valor de y no console fora do escopo onde ela foi criada
+      console.log("y", y);
+    </script>
+  </body>
+</html>
