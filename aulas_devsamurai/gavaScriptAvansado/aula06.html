@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Recebe por valor
+        function mult(n) {
+            n *= n;
+            return n;
+        }
+        let numVal = 10;
+        console.log(mult(numVal));
+        console.log(numVal);
+        // Recebe por referência (atenção a este comportamento)
+        function multObj(obj) {
+            obj.value *= obj.value;
+            return obj;
+        }
+        const numObj = {
+            value: 10
+        };
+        console.log(multObj(numObj));
+        console.log(numObj);
+    </script>
+</body>
+</html>
